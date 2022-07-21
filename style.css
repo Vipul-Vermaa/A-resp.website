@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 20px 23px;
+    font-size: 22px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: darkgrey;
+}
+
+.rightnav {
+
+    width: 50%;
+    text-align: right;
+    padding: 0 10px;
+
+}
+
+#search {
+    margin: 8px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.5)url(buildd.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsec {
+    height: 100vh;
+}
+
+.boxmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 247, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+
+    height: 65%;
+}
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf img {
+    width: 70%;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+}
+
+
+.text-big {
+    font-size: 32px;
+    color: white;
+}
+
+.text-small {
+    font-size: 18px;
+    align-items: center;
+
+    text-align: justify;
+    color: white;
+
+}
+
+.text-bigg {
+    font-size: 32px;
+    color: black;
+}
+
+.text-smalll {
+    font-size: 18px;
+    align-items: center;
+
+    text-align: justify;
+    color: black;
+
+}
+
+.btn {
+
+    padding: 6px 3px;
+    border-radius: 8px;
+    font-size: 15px;
+    background: none;
+    color: rgb(241, 239, 235);
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 5px 8px;
+    vertical-align: middle;
+}
+
+.secright {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.paras {
+    padding: 0px 45px;
+}
+
+.secleft {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+.contact {
+    background-color: whitesmoke;
+    height: 87vh;
+
+
+}
+
+.text-center {
+    text-align: center;
+    padding: 28px;
+    font-size: 42px;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form input {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px 1px;
+}
+
+.btn-d {
+    color: black;
+    border: 1px solid black;
+    width: 80px;
+}
+
+.text-footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 9, 43);
+    color: whitesmoke;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+
+.line {
+    width: 20px;
+    background-color: aliceblue;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+@media only screen and (max-width : 1006px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.25s ease-out;
+        height: 350px;
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 70px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .boxmain {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .secright {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .secleft {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .paras {
+        padding: 0px;
+    }
+
+}
